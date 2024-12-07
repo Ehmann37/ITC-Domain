@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('AboutMe.png');
+    background-size: cover;
+    text-align: center;    
+}
+
+@font-face {
+    font-family: MainFont;
+    src: url(YujiMai.woff);
+}
+
+
+@font-face {
+    font-family: 'SubTitlefont';
+    src: url(HelveticaNow.woff);
+}
+
+
+* {
+    font-family: MainFont;
+}
+
+header {
+    background-color: #c2a978;
+    margin-top: 20px;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1225px;
+    align-items:center;
+    padding: -10px;
+}
+
+.HomeAbout{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+    background-image: url('HomeAboutBorder.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color:#000; */
+    font-family: 'SubTitleFont';
+    font-size: 10pt;
+    padding: 30px;
+    
+}
+.Logo {
+    margin-left: 20px;
+}
+
+.Home:hover {
+    transform: scale(1.1);
+}
+
+.AboutMe:hover {
+    transform: scale(1.1);
+}
+
+#home {
+    margin-right: 0px;
+}
+
+#aboutme {
+    margin-right: 0px;
+    justify-content: right;
+
+}
+
+.Aboutme{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    align-items:center;
+    justify-content: center;
+}
+
+
+main {
+    padding: 0px;
+}
+
+#TITLE{
+    padding: 1px;
+    margin: -10px;
+    margin-top: 20px;
+    background-color: rgba(228, 228, 228, 0.45);
+    padding: 6px;
+    border: 2px solid #171b12
+    
+}
+
+.Title {    
+    margin-top: -25px;
+    justify-content: left;
+}
+
+.Title h1 {
+    font-size: 50pt;
+    justify-content: left;
+    /* margin-top: 35px; */
+}
+.Title p {
+    font-family: 'SubTitleFont';
+    font-size: 15pt;
+    margin-top: -40px;
+}
+
+.Section {
+    background-color: rgba(228, 228, 228, 0.45);
+    margin: 80px;
+    padding: 6px;
+    border-radius: 25px;
+    border: 2px solid #171b12
+}
+
+.Section  p{
+    font-family: 'SubTitleFont';
+}
+
+
+.paragraph{
+    background-color: rgba(228, 228, 228, 0.5);
+    justify-items: left;
+    text-align: justify;
+    margin: 30px;
+    border-radius: 25px;
+    border: 2px solid #171b12;
+    padding: 20px;
+    font-size: 18pt;
+}
+.paraTitle{
+    background-color: rgba(228, 228, 228, 0.5);
+    justify-items: center   ;
+    margin: 30px;
+    border-radius: 25px;
+    border: 2px solid #171b12;
+    padding: 20px;
+    font-size: 25pt;
+}

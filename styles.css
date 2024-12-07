@@ -1,0 +1,229 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('SpiderWeb.png');
+    background-size: cover;
+    text-align: center;    
+}
+
+@font-face {
+    font-family: MainFont;
+    src: url(YujiMai.woff);
+}
+
+
+@font-face {
+    font-family: 'SubTitlefont';
+    src: url(HelveticaNow.woff);
+}
+
+
+* {
+    font-family: MainFont;
+}
+
+
+/* Header Section */
+header {
+    background-color: #c2a978;
+    margin-top: 20px;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1225px;
+    align-items:center;
+    padding: -10px;
+}
+
+.HomeAbout{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+    background-image: url('HomeAboutBorder.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color:#000; */
+    font-family: 'SubTitleFont';
+    font-size: 10pt;
+    padding: 30px;
+}
+
+.Logo {
+    margin-left: 20px;
+}
+
+.Home:hover {
+    transform: scale(1.1);
+}
+
+.AboutMe:hover {
+    transform: scale(1.1);
+}
+
+#home {
+    margin-right: 0px;
+}
+
+#aboutme {
+    margin-right: 0px;
+    justify-content: right;
+
+}
+
+
+
+/* 
+header h1 {
+    font-size: 2rem;
+    margin: 10px;
+}
+
+header p {
+    font-size: 1rem;
+    color: #555;
+}  */
+
+/* nav {
+    margin-bottom: 15px;
+}
+
+.nav-link {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+}
+
+.nav-link:hover {
+    color: #007BFF;
+} */
+
+
+/* Main Section */
+main {
+    position: relative;
+    padding: 0px;
+}
+
+.Title {
+    margin-top: -25px;
+}
+
+.Title h1 {
+    font-size: 50pt;
+    /* margin-top: 35px; */
+}
+.Title p {
+    font-family: 'SubTitleFont';
+    font-size: 15pt;
+    margin-top: -40px;
+}
+
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding-top: 400px;
+}
+
+
+.portfolio-container a {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 1.9rem;
+    color: #000;
+    background-image: url('portBGimg.png');
+}   
+
+.portfolio {
+    position: relative;
+}
+
+.portfolio p {
+    width: 200px;
+    height: auto;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    top: -150px; /* Adjust based on your layout */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(185, 194, 196, 0.9);
+    border: 2px solid #000000;
+    border-radius: 15%;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    font-size: 80%;
+    font-family: 'SubTitlefont';
+}
+
+.portfolio:hover .tooltip {
+    display: block;
+}
+
+#port1  {
+    margin-top: -2px;
+    margin-right: -160px;
+    transform: rotate(-20deg); 
+}
+
+#port2  {
+    margin-top: -170px;
+    margin-left: -50px;
+    transform: rotate(6.5deg); 
+}
+#port3  {
+    margin-top: 40px;
+    margin-left: -40px;
+    transform: rotate(14deg); 
+}
+#port4  {
+    transform: rotate(-17deg); 
+    margin-top: -85px;
+    margin-right: -50px;
+}
+#port5  {
+    transform: rotate(15deg); 
+    margin-top: -220px;
+    margin-right: -90px;
+    
+}
+#port6  {
+    transform: rotate(5.5deg); 
+    margin-top: 50px;
+    margin-left: -150px;
+}
+
+
+
+
+/* */
+
+
+
+/* Spider Images
+main::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    width: 1535px;
+    height: 791px;
+    background-image: url('SpiderWeb.png'); /* Replace with your web image file */
+    /* background-size: cover;
+    z-index: -;
+} */ 
